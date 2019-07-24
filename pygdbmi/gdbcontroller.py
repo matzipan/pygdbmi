@@ -249,7 +249,7 @@ class GdbController:
         self, timeout_sec=DEFAULT_GDB_TIMEOUT_SEC, raise_error_on_timeout=True
     ):
         """Get response from GDB, and block while doing so. If GDB does not have any response ready to be read
-        by timeout_sec, an exception is raised.
+        by timeout_sec, an exception can be raised.
 
         Args:
             timeout_sec (float): Maximum time to wait for reponse. Must be >= 0. Will return after
